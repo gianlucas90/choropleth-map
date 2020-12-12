@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Visualize Data with a Choropleth Map</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 id="title">United States Educational Attainment</h1>
+      <h2 id="description">
+        Percentage of adults age 25 and older with a bachelor's degree or higher
+        (2010-2014)
+      </h2>
+      <svg id="map"></svg>
+      <svg id="legend">
+        <rect x="0" y="0" width="20" height="20" fill="#D6EAF8"></rect>
+        <text x="0" y="40">>3%</text>
+
+        <rect x="50" y="0" width="20" height="20" fill="#AED6F1"></rect>
+        <text x="50" y="40">>15%</text>
+
+        <rect x="100" y="0" width="20" height="20" fill="#5DADE2"></rect>
+        <text x="100" y="40">>27%</text>
+
+        <rect x="150" y="0" width="20" height="20" fill="#2471A3"></rect>
+        <text x="150" y="40">>39%</text>
+
+        <rect x="200" y="0" width="20" height="20" fill="#1A5276"></rect>
+        <text x="200" y="40">>51%</text>
+
+        <rect x="250" y="0" width="20" height="20" fill="#154360"></rect>
+        <text x="250" y="40">>63%</text>
+      </svg>
+    </main>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="http://d3-legend.susielu.com/d3-legend.min.js"></script>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
